@@ -33,15 +33,28 @@ Drink = input("What is your favourite Drink")
 print("Your favourite meal is", Starter,",", Main, ",", Dessert +" with a glass of" + Drink)
 
 #Task4
-
-Cost = 2000
+   #FIrst attempt
+"""Cost = 2000
 Loss = Cost * 0.1
 i = Cost
 while i >= 1000:
   print(Cost - Loss)
   Cost -= Loss
-  i = Cost
+  i = Cost"""
   
+    #New Corrected Loop
+
+Cost = 2000
+i = 0
+while Cost >= 1000:
+    print(Cost)
+    Loss = Cost * 0.1
+    Motor = (Cost - Loss)
+    print("Value:",Motor)
+    Cost = Motor
+    print ("Year:",i)
+    i +=1
+
 
 #Task 5
 
